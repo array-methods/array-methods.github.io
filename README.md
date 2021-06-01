@@ -31,7 +31,7 @@
 ["🟦","🟡","🔺","🟩","🛑","🔴"].copyWithin(3,1,4) ⟼ ["🟦", "🟡", "🔺", "🟡", "🔺", "🟩"]
 ```
 
-**Finding Array elements:**
+**Finding Array elements:** [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) - [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexof) - [lastIndexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastindexof) - [find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) - [findIndex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex) - 
 
 ```js
 ["🟦","🟡","🔺"].includes("🟦")           ⟼ true
