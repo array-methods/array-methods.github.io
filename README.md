@@ -52,11 +52,11 @@
 **Adding or removing an element at either end of an Array:**
 
 ```js
-arr=["🟦","🟡"];       arr.push("🔺");    arr ⟼ ["🟦","🟡","🔺"]
-arr=["🟦","🟡","🔺"]; arr.pop();          arr ⟼ ["🟦","🟡"]
+arr=["🟦","🟡"];      val = arr.push("🔺");    arr ⟼ ["🟦","🟡","🔺"]    val = 3 (arr.length)
+arr=["🟦","🟡","🔺"]; val = arr.pop();          arr ⟼ ["🟦","🟡"]   val="🔺"
 
-arr=["🟦","🟡"];       arr.unshift("🔺"); arr ⟼ ["🔺","🟦","🟡"]
-arr=["🔺","🟦","🟡"]; arr.shift();        arr ⟼ ["🟦","🟡"]
+arr=["🟦","🟡"];       val = arr.unshift("🔺"); arr ⟼ ["🔺","🟦","🟡"]   val = 3 (arr.length)
+arr=["🔺","🟦","🟡"]; val = arr.shift();        arr ⟼ ["🟦","🟡"]   val="🔺"
 
 arr=["🟦","🟡","🔺"]; arr.unshift(arr.pop());    arr ⟼ ["🔺","🟦","🟡"]
 ```
