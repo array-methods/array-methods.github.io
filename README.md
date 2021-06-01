@@ -63,6 +63,6 @@ arr=["🟦","🟡","🔺"]; arr.unshift(arr.pop());    arr ⟼ ["🔺","🟦","�
 
 #### MDN Documentation
 * [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-    * [[].filter( (element , index , array) )=>{ ... }](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 
-    * [[].map( (element , index , array) )=>{ ... }](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-    * [[].reduce( (accumulator, currentValue, index, array) )=>{ ... }](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+    * [[].filter( (value , index , array) )=>{ ... }](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 
+    * [[].map( (value , index , array) )=>{ ... }](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+    * [[].reduce( (accumulator, value, index, array) )=>{ ... }](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
