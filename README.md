@@ -25,10 +25,12 @@
 **Changing all of an Array (the input Array is modified and returned):** [fill](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) - [reverse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) - [sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) - [copyWithin](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin) - 
 
 ```js
-["🟦","🟡","🔺"].fill("🟡") ⟼ ["🟡","🟡","🟡"]
-Array(5).fill('🔺')          ⟼ ["🔺","🔺","🔺","🔺","🔺"]
-["🟦","🟡","🔺"].reverse()  ⟼ ["🔺","🟡","🟦"]
-["🟦","🟡","🟩"].sort()     ⟼ ["🟡","🟦","🟩"]
+["🟦","🟡","🔺"].fill("🟡")           ⟼ ["🟡","🟡","🟡"]
+Array(5).fill("🔺")                     ⟼ ["🔺","🔺","🔺","🔺","🔺"]
+Array(5).fill("🔺").map((val,idx)=>idx) ⟼ [0,1,2,3,4]
+
+["🟦","🟡","🔺"].reverse()        ⟼ ["🔺","🟡","🟦"]
+["🟦","🟡","🟩"].sort()           ⟼ ["🟡","🟦","🟩"]
 
 ["🟦","🟡","🔺","🟩","🛑","🔴"].copyWithin(3,1,4) ⟼ ["🟦", "🟡", "🔺", "🟡", "🔺", "🟩"]
 ```
