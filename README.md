@@ -41,15 +41,18 @@
 ["🟦","🟡","🔺"].findIndex(x => x==="🟦") ⟼ 0
 ```
 
-**Listing elements (spreading via `...` is needed because the methods return iterables):**
+**Listing elements:** [keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) - [values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values) - [entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries) - 
+
+spreading via `...` might be needed because the methods return iterables;  
+all Array methods _can_ be chained. eg: ``[].entries.map( ([key,value]) => { ... } );``
 
 ```js
-[...["🟦","🟡","🔺"].keys()]    ⟼ [0,1,2]
-[...["🟦","🟡","🔺"].values()]  ⟼ ["🟦","🟡","🔺"]
-[...["🟦","🟡","🔺"].entries()] ⟼ [[0,"🟦"],[1,"🟡"],[2,"🔺"]]
+["🟦","🟡","🔺"].keys()    ⟼ [0,1,2]
+["🟦","🟡","🔺"].values()  ⟼ ["🟦","🟡","🔺"]
+["🟦","🟡","🔺"].entries() ⟼ [[0,"🟦"],[1,"🟡"],[2,"🔺"]]
 ```
 
-**Adding or removing an element at either end of an Array:**
+**Adding or removing an element at either end of an Array:** [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) - [pop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) - [unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) - [shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) - 
 
 ```js
 arr=["🟦","🟡"];      val = arr.push("🔺");    arr ⟼ ["🟦","🟡","🔺"]    val = 3 (arr.length)
