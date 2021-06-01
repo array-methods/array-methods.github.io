@@ -9,7 +9,7 @@
 ["🟦","🟡","🔺"].flatMap(x => [x,x])          ⟼ ["🟦","🟦","🟡","🟡","🔺","🔺"]
 ```
 
-**Computing a summary of an Array:**
+**Computing a summary of an Array:** [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) - [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) - [join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) - [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) - [reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright) - 
 
 ```js
 ["🟦","🟡","🔺"].some(x => x==="🟡")  ⟼ true
