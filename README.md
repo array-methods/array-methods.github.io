@@ -1,6 +1,6 @@
 ### Cheat sheet: JavaScript Array methods [source:Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03baed2f925e0a084b)
 
-**Deriving a new Array from an existing Array:**
+**Deriving a new Array from an existing Array:** [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) - [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) - [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) - [flatMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/FlatMap)
 
 ```js
 ["🟦","🟡","🔺","🟩","🛑","🔴"].slice(2, 4)  ⟼ ["🔺","🟩"]
