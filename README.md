@@ -19,8 +19,8 @@ source: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03baed
 
 ['🟦','🟡','🔺'].join('-') ⟼ '🟦-🟡-🔺'
 
-['🟦','🟡'].reduce((result,x) => result+x, '🔺')      ⟼ '🔺🟦🟡'
-['🟦','🟡'].reduceRight((result,x) => result+x, '🔺') ⟼ '🔺🟡🟦'
+['🟦','🟡','🔺'].reduce((result,x) => result+x, '🟩')      ⟼ '🟩🟦🟡🔺'
+['🟦','🟡','🔺'].reduceRight((result,x) => result+x, '🟩') ⟼ '🟩🔺🟡🟦'
 ```
 
 **Changing all of an Array (the input Array is modified and returned):**
