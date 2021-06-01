@@ -1,4 +1,4 @@
-# Cheat sheet: JavaScript Array methods
+### Cheat sheet: JavaScript Array methods
 
 source: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03baed2f925e0a084b)
 
