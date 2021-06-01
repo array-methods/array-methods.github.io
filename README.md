@@ -1,6 +1,4 @@
-### Cheat sheet: JavaScript Array methods
-
-source: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03baed2f925e0a084b)
+### Cheat sheet: JavaScript Array methods [source:Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03baed2f925e0a084b)
 
 **Deriving a new Array from an existing Array:**
 
@@ -28,17 +26,17 @@ source: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03baed
 ```js
 ['🟦','🟡','🔺'].fill('🟡') ⟼ ['🟡','🟡','🟡']
 ['🟦','🟡','🔺'].reverse() ⟼ ['🔺','🟡','🟦']
-['🟦','🟡','🟦'].sort()    ⟼ ['🟦','🟦','🟡']
+['🟦','🟡','🟩'].sort()    ⟼ ['🟡','🟦','🟩']
 ```
 
 **Finding Array elements:**
 
 ```js
-['🟦','🟡','🟦'].includes('🟦')           ⟼ true
-['🟦','🟡','🟦'].indexOf('🟦')            ⟼ 0
+['🟦','🟡','🔺'].includes('🟦')           ⟼ true
+['🟦','🟡','🔺'].indexOf('🟦')            ⟼ 0
 ['🟦','🟡','🟦'].lastIndexOf('🟦')        ⟼ 2
-['🟦','🟡','🟦'].find(x => x==='🟦')      ⟼ '🟦'
-['🟦','🟡','🟦'].findIndex(x => x==='🟦') ⟼ 0
+['🟦','🟡','🔺'].find(x => x==='🟦')      ⟼ '🟦'
+['🟦','🟡','🔺'].findIndex(x => x==='🟦') ⟼ 0
 ```
 
 **Listing elements (spreading via `...` is needed because the methods return iterables):**
@@ -52,9 +50,11 @@ source: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03baed
 **Adding or removing an element at either end of an Array:**
 
 ```js
-arr=['🟦','🟡'];     arr.push('🔺');    arr ⟼ ['🟦','🟡','🔺']
-arr=['🟦','🟡','🔺']; arr.pop();        arr ⟼ ['🟦','🟡']
+arr=['🟦','🟡'];       arr.push('🔺');    arr ⟼ ['🟦','🟡','🔺']
+arr=['🟦','🟡','🔺']; arr.pop();          arr ⟼ ['🟦','🟡']
 
-arr=['🟦','🟡'];     arr.unshift('🔺'); arr ⟼ ['🔺','🟦','🟡']
-arr=['🔺','🟦','🟡']; arr.shift();      arr ⟼ ['🟦','🟡']
+arr=['🟦','🟡'];       arr.unshift('🔺'); arr ⟼ ['🔺','🟦','🟡']
+arr=['🔺','🟦','🟡']; arr.shift();        arr ⟼ ['🟦','🟡']
+
+arr=['🟦','🟡','🔺']; arr.unshift(arr.pop());    arr ⟼ ['🔺','🟦','🟡']
 ```
