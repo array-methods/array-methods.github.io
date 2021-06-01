@@ -3,10 +3,11 @@
 **Deriving a new Array from an existing Array:** [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) - [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) - [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) - [flatMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/FlatMap)
 
 ```js
-["🟦","🟡","🔺","🟩","🛑","🔴"].slice(2, 4)  ⟼ ["🔺","🟩"]
-["🟦","🟡","🟦"].filter(x => x==="🟦")        ⟼ ["🟦","🟦"]
-["🟦","🟡","🔺"].map(x => x+x)                ⟼ ["🟦🟦","🟡🟡","🔺🔺"]
-["🟦","🟡","🔺"].flatMap(x => [x,x])          ⟼ ["🟦","🟦","🟡","🟡","🔺","🔺"]
+["🟦","🟡","🔺","🟩","🛑","🔴"].slice(2, 4)   ⟼ ["🔺","🟩"]
+["🟦","🟡","🟦"].filter(x => x==="🟦")         ⟼ ["🟦","🟦"]
+["🟦","🟡","🔺"].map(x => x+x)                  ⟼ ["🟦🟦","🟡🟡","🔺🔺"]
+["🟦","🟡","🔺"].map(x => [x+x])                ⟼ [["🟦🟦"],["🟡🟡"],["🔺🔺"]]
+["🟦","🟡","🔺"].flatMap(x => [x,x])            ⟼ ["🟦","🟦","🟡","🟡","🔺","🔺"]
 ```
 
 **Computing a summary of an Array:** [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) - [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) - [join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) - [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) - [reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright) - 
@@ -55,11 +56,11 @@ all Array methods _can_ be chained. eg: ``[].entries.map( ([key,value]) => { ...
 **Adding or removing an element at either end of an Array:** [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) - [pop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) - [unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) - [shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) - 
 
 ```js
-arr=["🟦","🟡"];      val = arr.push("🔺");    arr ⟼ ["🟦","🟡","🔺"]    val = 3 (arr.length)
-arr=["🟦","🟡","🔺"]; val = arr.pop();          arr ⟼ ["🟦","🟡"]   val="🔺"
+arr=["🟦","🟡"];      val = arr.push("🔺");    arr ⟼ ["🟦","🟡","🔺"]    val  ⟼ 3 (arr.length)
+arr=["🟦","🟡","🔺"]; val = arr.pop();          arr ⟼ ["🟦","🟡"]        val   ⟼ "🔺"
 
-arr=["🟦","🟡"];       val = arr.unshift("🔺"); arr ⟼ ["🔺","🟦","🟡"]   val = 3 (arr.length)
-arr=["🔺","🟦","🟡"]; val = arr.shift();        arr ⟼ ["🟦","🟡"]   val="🔺"
+arr=["🟦","🟡"];       val = arr.unshift("🔺"); arr ⟼ ["🔺","🟦","🟡"]   val  ⟼ 3 (arr.length)
+arr=["🔺","🟦","🟡"]; val = arr.shift();        arr ⟼ ["🟦","🟡"]        val  ⟼ "🔺"
 
 arr=["🟦","🟡","🔺"]; arr.unshift(arr.pop());    arr ⟼ ["🔺","🟦","🟡"]
 ```
