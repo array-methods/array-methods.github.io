@@ -4,11 +4,11 @@
 
 | array before | method (links to MDN) | return value | array after |
 |---|---|---|---|
-|``["🟦","🟡","🔺","🟩","🛑","🔴"]``|[``.slice(2, 4)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)|``["🔺" , "🟩"]``| ["🟦", "🟡", "🔺", "🟩", "🛑", "🔴"]|
-|``["🟦","🟡","🔺","🟩","🛑","🔴"]``|[``.splice(1, 3)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)|``["🟡" , "🔺" , "🟩"]``|["🟦", "🛑", "🔴"]|
+|``["🟦","🟡","🔺","🟩"]``|[``.slice(1, 3)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)|``["🟡","🔺"]``| ["🟦", "🟡", "🔺", "🟩"]|
+|``["🟦","🟡","🔺","🟩"]``|[``.splice(1, 3)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)|``["🟡" , "🔺" , "🟩"]``|["🟦"]|
 |``["🟦","🟡","🟦"]``|[``.filter(x => x==="🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)|``[ "🟦" , "🟦" ]``|``["🟦", "🟡", "🟦"]``|
 |``["🟦","🟡","🔺"]``|[``.map(x => x+x)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``["🟦🟦" , "🟡🟡","🔺🔺"]``|``["🟦","🟡","🔺"]``|
-|``["🟦","🟡","🔺"]``|[``.map(x => [x+x])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``[ ["🟦🟦"] , ["🟡🟡"] , ["🔺🔺"] ]``|``["🟦","🟡","🔺"]``|
+|``["🟦","🟡","🔺"]``|[``.map(x => [x+x])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``[["🟦🟦"],["🟡🟡"],["🔺🔺"]]``|``["🟦","🟡","🔺"]``|
 |``["🟦","🟡","🔺"]``|[``.flatMap(x => [x,x])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/FlatMap)|``["🟦","🟦","🟡","🟡","🔺","🔺"]``|``["🟦","🟡","🔺"]``|
 
 **Computing a summary of an Array:** [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) - [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) - [join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) - [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) - [reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright) - 
@@ -46,6 +46,7 @@
 
 spreading via `...` might be needed because the methods return iterables;  
 all Array methods _can_ be chained. eg: ``[].entries.map( ([key,value]) => { ... } );``
+
 |array before| method | return value|
 |---|---|---|
 |``["🟦","🟡","🔺"]``|``.keys()``|``[0,1,2]``|
