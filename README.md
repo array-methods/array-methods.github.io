@@ -1,4 +1,4 @@
-### Cheat sheet: JavaScript [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) methods - [source: Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03baed2f925e0a084b)
+## Cheat sheet: JavaScript [Array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) 
 
 **Deriving a new Array from an existing Array:**
 
@@ -10,6 +10,7 @@
 |``["🟦","🟡","🔺"]``|[``.map(x => x+x)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``["🟦🟦" , "🟡🟡","🔺🔺"]``|``["🟦","🟡","🔺"]``|
 |``["🟦","🟡","🔺"]``|[``.map(x => [x+x])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``[["🟦🟦"],["🟡🟡"],["🔺🔺"]]``|``["🟦","🟡","🔺"]``|
 |``["🟦","🟡","🔺"]``|[``.flatMap(x => [x,x])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/FlatMap)|``["🟦","🟦","🟡","🟡","🔺","🔺"]``|``["🟦","🟡","🔺"]``|
+|``["🟦","🟡","🔺"]``|[``.concat(["🟩","🔴"])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)|``["🟦","🟡","🔺","🟩","🔴"]``|``["🟦","🟡","🔺"]``|
 
 **Computing a summary of an Array:**  
 
@@ -44,14 +45,15 @@
 
 **Listing elements:**  
 
-spreading via `...` might be needed because the methods return iterables;  
-all Array methods _can_ be chained. eg: ``[].entries.map( ([key,value]) => { ... } );``
-
-|array before| method | return value|
+|array before| method | return value ([iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#iterators)) |
 |---|---|---|
 |``["🟦","🟡","🔺"]``|[``.keys()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys)|``[0,1,2]``|
 |``["🟦","🟡","🔺"]``|[``.values()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values)|``["🟦","🟡","🔺"]``|
 |``["🟦","🟡","🔺"]``|[``.entries()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)|``[ [0,"🟦"] , [1,"🟡"] , [2,"🔺"] ]``|
+
+| spreading `...` required because these methods return [iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#iterators)| return value |
+|---|---|
+|``[ ...["🟦","🟡","🔺"].entries() ].map( ([key,val]) => val.repeat(key) )``|``["", "🟡", "🔺🔺"]``|
 
 **Adding or removing an element at either end of an Array:** 
 
@@ -63,3 +65,7 @@ all Array methods _can_ be chained. eg: ``[].entries.map( ([key,value]) => { ...
 |``["🟦","🟡","🔺"]``|[``.shift()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)|``["🟡","🔺"]``|``"🟦"``|
 |||||
 |``["🟦","🟡","🔺"]``|``.unshift(arr.pop())``|``["🔺","🟦","🟡"]``|**3** ``(new array length)``|
+
+<hr>
+
+[inspiration: Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03baed2f925e0a084b)
