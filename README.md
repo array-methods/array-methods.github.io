@@ -38,21 +38,21 @@
 |---|---|---|---|
 |``["🟦","🟡","🔺","🟩"]``|[``.slice(1, 3)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)|``["🟡","🔺"]``| ["🟦", "🟡", "🔺", "🟩"]|
 |``["🟦","🟡","🔺","🟩"]``|[``.splice(1, 3)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)|``["🟡" , "🔺" , "🟩"]``|["🟦"]|
-|``["🟦","🟡","🟦"]``|[``.filter(x => x==="🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)|``[ "🟦" , "🟦" ]``|``["🟦", "🟡", "🟦"]``|
-|``["🟦","🟡","🔺"]``|[``.map(x => x+x)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``["🟦🟦" , "🟡🟡","🔺🔺"]``|``["🟦","🟡","🔺"]``|
-|``["🟦","🟡","🔺"]``|[``.map(x => [x+x])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``[["🟦🟦"],["🟡🟡"],["🔺🔺"]]``|``["🟦","🟡","🔺"]``|
-|``["🟦","🟡","🔺"]``|[``.flatMap(x => [x,x])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/FlatMap)|``["🟦","🟦","🟡","🟡","🔺","🔺"]``|``["🟦","🟡","🔺"]``|
-|``["🟦","🟡","🔺"]``|[``.concat(["🟩","🔴"])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)|``["🟦","🟡","🔺","🟩","🔴"]``|``["🟦","🟡","🔺"]``|
+|``["🟦","🟡","🟦"]``|[``.filter( x => x==="🟦" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)|``[ "🟦" , "🟦" ]``|``["🟦", "🟡", "🟦"]``|
+|``["🟦","🟡","🔺"]``|[``.map( x => x+x )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``["🟦🟦" , "🟡🟡","🔺🔺"]``|``["🟦","🟡","🔺"]``|
+|``["🟦","🟡","🔺"]``|[``.map( x => [x+x] )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``[["🟦🟦"],["🟡🟡"],["🔺🔺"]]``|``["🟦","🟡","🔺"]``|
+|``["🟦","🟡","🔺"]``|[``.flatMap( x => [x,x] )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/FlatMap)|``["🟦","🟦","🟡","🟡","🔺","🔺"]``|``["🟦","🟡","🔺"]``|
+|``["🟦","🟡","🔺"]``|[``.concat( ["🟩","🔴"] )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)|``["🟦","🟡","🔺","🟩","🔴"]``|``["🟦","🟡","🔺"]``|
 
 **Computing a summary of an Array:**  
 
 | array | method | return value|
 |---|---|---|
-|``["🟦","🟡","🔺"]``|[``.some(x => x==="🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)|``true``|
-|``["🟦","🟡","🔺"]``|[``.every(x => x==="🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)|``false``|
-|``["🟦","🟡","🔺"]``|[``.join("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)|``"🟦🟩🟡🟩🔺"``|
-|``["🟦","🟡","🔺"]``|[``.reduce((result,x)=> result+x, "🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|``"🟩🟦🟡🔺"``|
-|``["🟦","🟡","🔺"]``|[``.reduceRight((result,x) => result+x, "🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright)|``"🟩🔺🟡🟦"``|
+|``["🟦","🟡","🔺"]``|[``.some( x => x==="🟡" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)|``true``|
+|``["🟦","🟡","🔺"]``|[``.every( x => x==="🟡" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)|``false``|
+|``["🟦","🟡","🔺"]``|[``.join( "🟩" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)|``"🟦🟩🟡🟩🔺"``|
+|``["🟦","🟡","🔺"]``|[``.reduce( (result,x) => result+x , "🟩" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|``"🟩🟦🟡🔺"``|
+|``["🟦","🟡","🔺"]``|[``.reduceRight( (result,x) => result+x , "🟩" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright)|``"🟩🔺🟡🟦"``|
 
 **Listing elements:**  
 
