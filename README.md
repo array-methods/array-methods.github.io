@@ -11,55 +11,55 @@
 |``["🟦","🟡","🔺"]``|[``.map(x => [x+x])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|``[["🟦🟦"],["🟡🟡"],["🔺🔺"]]``|``["🟦","🟡","🔺"]``|
 |``["🟦","🟡","🔺"]``|[``.flatMap(x => [x,x])``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/FlatMap)|``["🟦","🟦","🟡","🟡","🔺","🔺"]``|``["🟦","🟡","🔺"]``|
 
-**Computing a summary of an Array:** [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) - [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) - [join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) - [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) - [reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright) - 
+**Computing a summary of an Array:**  
 
 | array before | method | return value|
 |---|---|---|
-|``["🟦","🟡","🔺"]``|``.some(x => x==="🟡")``|``true``|
-|``["🟦","🟡","🔺"]``|``.every(x => x==="🟡")``|``false``|
-|``["🟦","🟡","🔺"]``|``.join("🟩")``|``"🟦🟩🟡🟩🔺"``|
-|``["🟦","🟡","🔺"]``|``.reduce((result,x)=> result+x, "🟩")``|``"🟩🟦🟡🔺"``|
-|``["🟦","🟡","🔺"]``|``.reduceRight((result,x) => result+x, "🟩")``|``"🟩🔺🟡🟦"``|
+|``["🟦","🟡","🔺"]``|[``.some(x => x==="🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)|``true``|
+|``["🟦","🟡","🔺"]``|[``.every(x => x==="🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)|``false``|
+|``["🟦","🟡","🔺"]``|[``.join("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)|``"🟦🟩🟡🟩🔺"``|
+|``["🟦","🟡","🔺"]``|[``.reduce((result,x)=> result+x, "🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|``"🟩🟦🟡🔺"``|
+|``["🟦","🟡","🔺"]``|[``.reduceRight((result,x) => result+x, "🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright)|``"🟩🔺🟡🟦"``|
 
-**Changing all of an Array (the input Array is modified and returned):** [fill](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) - [reverse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) - [sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) - [copyWithin](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin) - 
+**Changing all of an Array (the input Array is modified and returned):** 
 
 | array before | method | return value |
 |---|---|---|
-|``["🟦","🟡","🔺"]``|``.fill("🟡")``|``["🟡","🟡","🟡"]``|
-|``Array(5)``|``.fill("🔺")``|``["🔺","🔺","🔺","🔺","🔺"]``|
-|``Array(5)``|``.fill("🔺").map((val,idx)=>idx)``|``[0,1,2,3,4]``|
-|``["🟦","🟡","🔺"]``|``.reverse()``|``["🔺","🟡","🟦"]``|
-|``["🟦","🟡","🟩"]``|``.sort()``|``["🟡","🟦","🟩"]``|
-|``["🟦","🟡","🔺","🟩","🛑","🔴"]``|``.copyWithin(3,1,4)``|``["🟦", "🟡", "🔺", "🟡", "🔺", "🟩"]``|
+|``["🟦","🟡","🔺"]``|[``.fill("🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``["🟡","🟡","🟡"]``|
+|``Array(3)``|[``.fill("🔺")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``["🔺","🔺","🔺"]``|
+|``Array(3)``|[``.fill("🔺").map((val,idx)=>idx)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``[0,1,2]``|
+|``["🟦","🟡","🔺"]``|[``.reverse()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)|``["🔺","🟡","🟦"]``|
+|``["🟦","🟡","🟩"]``|[``.sort()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|``["🟡","🟦","🟩"]``|
+|``["🟦","🟡","🔺","🟩","🛑","🔴"]``|[``.copyWithin(3,1,4)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin)|``["🟦", "🟡", "🔺", "🟡", "🔺", "🟩"]``|
 
-**Finding Array elements:** [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) - [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexof) - [lastIndexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastindexof) - [find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) - [findIndex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex) - 
+**Finding Array elements:**  
 
 | before | method | return value |
 |---|---|---|
-|``["🟦","🟡","🔺"]``|``.includes("🟦")``|``true``|
-|``["🟦","🟡","🔺"]``|``.indexOf("🟦")``|``0``|
-|``["🟦","🟡","🟦"]``|``.lastIndexOf("🟦")``|``2``|
-|``["🟦","🟡","🔺"]``|``.find(x => x==="🟦")``|``"🟦"``|
-|``["🟦","🟡","🔺"]``|``.findIndex(x => x==="🟦")``|``0``|
+|``["🟦","🟡","🔺"]``|[``.includes("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)|``true``|
+|``["🟦","🟡","🔺"]``|[``.indexOf("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexof)|``0``|
+|``["🟦","🟡","🟦"]``|[``.lastIndexOf("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastindexof)|``2``|
+|``["🟦","🟡","🔺"]``|[``.find(x => x==="🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)|``"🟦"``|
+|``["🟦","🟡","🔺"]``|[``.findIndex(x => x==="🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)|``0``|
 
-**Listing elements:** [keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) - [values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values) - [entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries) - 
+**Listing elements:**  
 
 spreading via `...` might be needed because the methods return iterables;  
 all Array methods _can_ be chained. eg: ``[].entries.map( ([key,value]) => { ... } );``
 
 |array before| method | return value|
 |---|---|---|
-|``["🟦","🟡","🔺"]``|``.keys()``|``[0,1,2]``|
-|``["🟦","🟡","🔺"]``|``.values()``|``["🟦","🟡","🔺"]``|
-|``["🟦","🟡","🔺"]``|``.entries()``|``[ [0,"🟦"] , [1,"🟡"] , [2,"🔺"] ]``|
+|``["🟦","🟡","🔺"]``|[``.keys()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys)|``[0,1,2]``|
+|``["🟦","🟡","🔺"]``|[``.values()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values)|``["🟦","🟡","🔺"]``|
+|``["🟦","🟡","🔺"]``|[``.entries()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)|``[ [0,"🟦"] , [1,"🟡"] , [2,"🔺"] ]``|
 
-**Adding or removing an element at either end of an Array:** [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) - [pop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) - [unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) - [shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) - 
+**Adding or removing an element at either end of an Array:** 
 
 | array before | method | array after | return value |
 |---|---|---|---|
-|``arr=["🟦","🟡","🔺"];``|``val = arr.push("🟩");``|``arr ⟼ ["🟦","🟡","🔺","🟩"]``|``val  ⟼ 4 (arr.length)``|
-|``arr=["🟦","🟡","🔺"];``|``val = arr.pop();``|``arr ⟼ ["🟦","🟡"]``|``val   ⟼ "🔺"``|
-|``arr=["🟦","🟡","🔺"];``|``val = arr.unshift("🟩");``|``arr ⟼ ["🟩","🟦","🟡","🔺"]``|``val  ⟼ 4 (arr.length)``|
-|``arr=["🟦","🟡","🔺"];``|``val = arr.shift();``|``arr ⟼ ["🟡","🔺"]``|``val  ⟼ "🟦"``|
+|``["🟦","🟡","🔺"]``|[``.push("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)|``["🟦","🟡","🔺","🟩"]``|``4 (arr.length)``|
+|``["🟦","🟡","🔺"]``|[``.pop()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)|``["🟦","🟡"]``|``"🔺"``|
+|``["🟦","🟡","🔺"]``|[``.unshift("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)|``["🟩","🟦","🟡","🔺"]``|``4 (arr.length)``|
+|``["🟦","🟡","🔺"]``|[``.shift()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)|``["🟡","🔺"]``|``"🟦"``|
 |||||
-|``arr=["🟦","🟡","🔺"];``|``arr.unshift(arr.pop());``|``arr ⟼ ["🔺","🟦","🟡"]``|``val  ⟼ 3 (arr.length)``|
+|``["🟦","🟡","🔺"]``|``.unshift(arr.pop())``|``["🔺","🟦","🟡"]``|``3 (arr.length)``|
