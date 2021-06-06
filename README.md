@@ -1,6 +1,38 @@
 ## Cheat sheet: JavaScript [Array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) 
 
-**Deriving a new Array from an existing Array:**
+**Adding or removing an element at either end of an Array:** 
+
+| array before | method | return value | array after |
+|---|---|---|---|
+|``["🟦","🟡","🔺"]``|[``.push("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)|**4** ``(new array length)``|``["🟦","🟡","🔺","🟩"]``|
+|``["🟦","🟡","🔺"]``|[``.pop()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)|``"🔺"``|``["🟦","🟡"]``|
+|``["🟦","🟡","🔺"]``|[``.unshift("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)|**4** ``(new array length)``|``["🟩","🟦","🟡","🔺"]``|
+|``["🟦","🟡","🔺"]``|[``.shift()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)|``"🟦"``|``["🟡","🔺"]``|
+|||||
+|``["🟦","🟡","🔺"]``|``.unshift(arr.pop())``|**3** ``(new array length)``|``["🔺","🟦","🟡"]``|
+
+**Changing all of an Array (the input Array is modified and returned):** 
+
+| array before | method | return value |
+|---|---|---|
+|``["🟦","🟡","🔺"]``|[``.fill("🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``["🟡","🟡","🟡"]``|
+|``Array(3)``|[``.fill("🔺")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``["🔺","🔺","🔺"]``|
+|``Array(3)``|[``.fill("🔺").map((val,idx)=>idx)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``[0,1,2]``|
+|``["🟦","🟡","🔺"]``|[``.reverse()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)|``["🔺","🟡","🟦"]``|
+|``["🟦","🟡","🟩"]``|[``.sort()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|``["🟡","🟦","🟩"]``|
+|``["🟦","🟡","🔺","🟩","🛑","🔴"]``|[``.copyWithin(3,1,4)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin)|``["🟦", "🟡", "🔺", "🟡", "🔺", "🟩"]``|
+
+**Finding Array elements:**  
+
+| array | method | return value |
+|---|---|---|
+|``["🟦","🟡","🔺"]``|[``.includes("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)|**true**|
+|``["🟦","🟡","🔺"]``|[``.indexOf("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexof)|**0**|
+|``["🟦","🟡","🟦"]``|[``.lastIndexOf("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastindexof)|**2**|
+|``["🟦","🟡","🔺"]``|[``.find(x => x==="🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)|"🟦"|
+|``["🟦","🟡","🔺"]``|[``.findIndex(x => x==="🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)|**0**|
+
+**Creating a new Array from an existing Array:**
 
 | array before | method (links to MDN) | return value | array after |
 |---|---|---|---|
@@ -22,27 +54,6 @@
 |``["🟦","🟡","🔺"]``|[``.reduce((result,x)=> result+x, "🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|``"🟩🟦🟡🔺"``|
 |``["🟦","🟡","🔺"]``|[``.reduceRight((result,x) => result+x, "🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright)|``"🟩🔺🟡🟦"``|
 
-**Changing all of an Array (the input Array is modified and returned):** 
-
-| array before | method | return value |
-|---|---|---|
-|``["🟦","🟡","🔺"]``|[``.fill("🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``["🟡","🟡","🟡"]``|
-|``Array(3)``|[``.fill("🔺")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``["🔺","🔺","🔺"]``|
-|``Array(3)``|[``.fill("🔺").map((val,idx)=>idx)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``[0,1,2]``|
-|``["🟦","🟡","🔺"]``|[``.reverse()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)|``["🔺","🟡","🟦"]``|
-|``["🟦","🟡","🟩"]``|[``.sort()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|``["🟡","🟦","🟩"]``|
-|``["🟦","🟡","🔺","🟩","🛑","🔴"]``|[``.copyWithin(3,1,4)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin)|``["🟦", "🟡", "🔺", "🟡", "🔺", "🟩"]``|
-
-**Finding Array elements:**  
-
-| array | method | return value |
-|---|---|---|
-|``["🟦","🟡","🔺"]``|[``.includes("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)|``true``|
-|``["🟦","🟡","🔺"]``|[``.indexOf("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexof)|``0``|
-|``["🟦","🟡","🟦"]``|[``.lastIndexOf("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastindexof)|``2``|
-|``["🟦","🟡","🔺"]``|[``.find(x => x==="🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)|``"🟦"``|
-|``["🟦","🟡","🔺"]``|[``.findIndex(x => x==="🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)|``0``|
-
 **Listing elements:**  
 
 | array | method | return value ([iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#iterators)) |
@@ -54,17 +65,6 @@
 | spreading `...` required because these methods return [iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#iterators)| return value |
 |---|---|
 |``[ ...["🟦","🟡","🔺"].entries() ].map( ([key,val]) => val.repeat(key) )``|``["", "🟡", "🔺🔺"]``|
-
-**Adding or removing an element at either end of an Array:** 
-
-| array before | method | return value | array after |
-|---|---|---|---|
-|``["🟦","🟡","🔺"]``|[``.push("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)|**4** ``(new array length)``|``["🟦","🟡","🔺","🟩"]``|
-|``["🟦","🟡","🔺"]``|[``.pop()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)|``"🔺"``|``["🟦","🟡"]``|
-|``["🟦","🟡","🔺"]``|[``.unshift("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)|**4** ``(new array length)``|``["🟩","🟦","🟡","🔺"]``|
-|``["🟦","🟡","🔺"]``|[``.shift()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)|``"🟦"``|``["🟡","🔺"]``|
-|||||
-|``["🟦","🟡","🔺"]``|``.unshift(arr.pop())``|**3** ``(new array length)``|``["🔺","🟦","🟡"]``|
 
 <hr>
 
