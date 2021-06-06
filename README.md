@@ -65,7 +65,7 @@
 
 | spreading `...` required because these methods return [iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#iterators)| return value |
 |---|---|
-|``[ ...["🟦","🟡","🔺"].entries() ].map( ([key,val]) => val.repeat(key) )``|``["", "🟡", "🔺🔺"]``|
+|``[ ...["🟦","🟡","🔺","🟩"].entries() ].map( ([key,val]) => val.repeat(key) )``|``["", "🟡", "🔺🔺","🟩🟩🟩"]``|
 
 <hr>
 
