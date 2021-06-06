@@ -17,7 +17,7 @@
 |---|---|---|
 |``["🟦","🟡","🔺"]``|[``.fill("🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``["🟡","🟡","🟡"]``|
 |``Array(3)``|[``.fill("🔺")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``["🔺","🔺","🔺"]``|
-|``Array(3)``|[``.fill("🔺").map((val,idx)=>idx)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``[0,1,2]``|
+|``Array(3)``|[``.fill("🔺").map( (val,idx) => idx )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|``[ 0 , 1 , 2 ]``|
 |``["🟦","🟡","🔺"]``|[``.reverse()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)|``["🔺","🟡","🟦"]``|
 |``["🟦","🟡","🟩"]``|[``.sort()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|``["🟡","🟦","🟩"]``|
 |``["🟦","🟡","🔺","🟩","🛑","🔴"]``|[``.copyWithin(3,1,4)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin)|``["🟦", "🟡", "🔺", "🟡", "🔺", "🟩"]``|
