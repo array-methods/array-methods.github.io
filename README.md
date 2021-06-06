@@ -57,9 +57,9 @@ all Array methods _can_ be chained. eg: ``[].entries.map( ([key,value]) => { ...
 
 | array before | method | array after | return value |
 |---|---|---|---|
-|``["🟦","🟡","🔺"]``|[``.push("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)|``["🟦","🟡","🔺","🟩"]``|``4 (arr.length)``|
+|``["🟦","🟡","🔺"]``|[``.push("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)|``["🟦","🟡","🔺","🟩"]``|**4** ``(new array length)``|
 |``["🟦","🟡","🔺"]``|[``.pop()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)|``["🟦","🟡"]``|``"🔺"``|
-|``["🟦","🟡","🔺"]``|[``.unshift("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)|``["🟩","🟦","🟡","🔺"]``|``4 (arr.length)``|
+|``["🟦","🟡","🔺"]``|[``.unshift("🟩")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)|``["🟩","🟦","🟡","🔺"]``|**4** ``(new array length)``|
 |``["🟦","🟡","🔺"]``|[``.shift()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)|``["🟡","🔺"]``|``"🟦"``|
 |||||
-|``["🟦","🟡","🔺"]``|``.unshift(arr.pop())``|``["🔺","🟦","🟡"]``|``3 (arr.length)``|
+|``["🟦","🟡","🔺"]``|``.unshift(arr.pop())``|``["🔺","🟦","🟡"]``|**3** ``(new array length)``|
