@@ -35,7 +35,7 @@
 
 **Finding Array elements:**  
 
-| before | method | return value |
+| array | method | return value |
 |---|---|---|
 |``["🟦","🟡","🔺"]``|[``.includes("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)|``true``|
 |``["🟦","🟡","🔺"]``|[``.indexOf("🟦")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexof)|``0``|
@@ -45,7 +45,7 @@
 
 **Listing elements:**  
 
-|array before| method | return value ([iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#iterators)) |
+| array | method | return value ([iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#iterators)) |
 |---|---|---|
 |``["🟦","🟡","🔺"]``|[``.keys()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys)|``[0,1,2]``|
 |``["🟦","🟡","🔺"]``|[``.values()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values)|``["🟦","🟡","🔺"]``|
