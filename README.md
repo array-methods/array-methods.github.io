@@ -51,6 +51,7 @@
 |``["🟦","🟡","🔺"]``|[``.some( x => x==="🟡" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)|``true``|
 |``["🟦","🟡","🔺"]``|[``.every( x => x==="🟡" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)|``false``|
 |``["🟦","🟡","🔺"]``|[``.join( "🟩" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)|``"🟦🟩🟡🟩🔺"``|
+|``[ 2 , 3 , 4 ]``|[``.reduce( (result,x) => result+x , 10 )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|**18**|
 |``["🟦","🟡","🔺"]``|[``.reduce( (result,x) => result+x , "🟩" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|``"🟩🟦🟡🔺"``|
 |``["🟦","🟡","🔺"]``|[``.reduceRight( (result,x) => result+x , "🟩" )``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright)|``"🟩🔺🟡🟦"``|
 
