@@ -14,7 +14,7 @@
 
 **Computing a summary of an Array:**  
 
-| array before | method | return value|
+| array | method | return value|
 |---|---|---|
 |``["🟦","🟡","🔺"]``|[``.some(x => x==="🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)|``true``|
 |``["🟦","🟡","🔺"]``|[``.every(x => x==="🟡")``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)|``false``|
