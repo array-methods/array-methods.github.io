@@ -21,7 +21,7 @@
 |``["🟦","🟡","🔺","🟩"]``|[``.reverse()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)|``["🔺","🟡","🟦"]``|
 |``["c","a","d","b"]``|[``.sort()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|``["a","b","c","d"]``|
 |``["🟦","🟡","🔺","🟩"]``|[``.sort()``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|``["🔺","🟡","🟦","🟩"]``|
-|``["🟦","🟡","🔺","🟩" ]``|[``.copyWithin(1,2,3)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin)|``["🟦","🟡","🔺","🟩" ]``|
+|``["🟦","🟡","🔺","🟩" ]``|[``.copyWithin(1,2,3)``](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin)|``["🟦",🔺","🔺","🟩" ]``|
 
 **Finding Array elements:**  
 
