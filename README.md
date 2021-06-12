@@ -20,7 +20,7 @@ Credits: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03bae
 |<sup>["🟦","🟡","🔺","🟩"]</sup>|<sup>[.fill("🟡")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|<sup>["🟡","🟡","🟡","🟡"]</sup>|
 |Array(4)|<sup>[.fill("🔺")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|<sup>["🔺","🔺","🔺","🔺"]</sup>|
 |Array(4)|<sup>[.fill("🔺")<br>.map( (val,idx) => idx )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|<sup>[ 0, 1, 2, 3 ]</sup>|
-|<sup>["🟦","🟡","🔺","🟩"]</sup>|<sup>[.reverse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)|<sup>["🔺","🟡","🟦"]</sup>|
+|<sup>["🟦","🟡","🔺","🟩"]</sup>|<sup>[.reverse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)|<sup>["🟩","🔺","🟡","🟦"]</sup>|
 |<sup>["c","a","d","b"]</sup>|<sup>[.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|<sup>["a","b","c","d"]</sup>|
 |<sup>["🟦","🟡","🔺","🟩"]</sup>|<sup>[.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|<sup>["🔺","🟡","🟦","🟩"]</sup>|
 |<sup>["🟦","🟡","🔺","🟩" ]</sup>|<sup>[.copyWithin(1,2,3)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin)|<sup>["🟦",🔺","🔺","🟩" ]</sup>|
