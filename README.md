@@ -19,9 +19,9 @@ Credits: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03bae
 |---|---|---|
 |<sup>["🟦","🟡","🔺","🟩"]</sup>|[.fill("🟡")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|<sup>["🟡","🟡","🟡","🟡"]</sup>|
 |Array(4)|[.fill("🔺")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|<sup>["🔺","🔺","🔺","🔺"]</sup>|
-|Array(4)|[.fill("🔺").map( (val,idx) => idx )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|<sup>[ 0, 1, 2, 3 ]</sup>|
+|Array(4)|[.fill("🔺").map( (val,idx) => idx )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)|[ 0, 1, 2, 3 ]|
 |<sup>["🟦","🟡","🔺","🟩"]</sup>|[.reverse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)|<sup>["🟩","🔺","🟡","🟦"]</sup>|
-|<sup>["c","a","d","b"]</sup>|[.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|<sup>["a","b","c","d"]</sup>|
+|["c","a","d","b"]|[.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|["a","b","c","d"]|
 |<sup>["🟦","🟡","🔺","🟩"]</sup>|[.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)|<sup>["🔺","🟡","🟦","🟩"]</sup>|
 |<sup>["🟦","🟡","🔺","🟩" ]</sup>|[.copyWithin(1,2,3)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin)|<sup>["🟦",🔺","🔺","🟩" ]</sup>|
 
@@ -54,7 +54,7 @@ Credits: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03bae
 |<sup>["🟦","🟡","🔺"]</sup>|[.some( x => x==="🟡" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)|true|
 |<sup>["🟦","🟡","🔺"]</sup>|[.every( x => x==="🟡" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)|false|
 |<sup>["🟦","🟡","🔺"]</sup>|[.join( "🟩" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)|"🟦🟩🟡🟩🔺"|
-|<sup>[ 2, 3, 4 ]</sup>|[.reduce( (result,x) => result+x, 10 )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|**19**<sup> 10+2+3+4</sup>|
+|[ 2, 3, 4 ]|[.reduce( (result,x) => result+x, 10 )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|**19**<sup> 10+2+3+4</sup>|
 |<sup>["🟦","🟡","🔺"]</sup>|[.reduce( (result,x) => result+x,"🟩")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|"🟩🟦🟡🔺"|
 |<sup>["🟦","🟡","🔺"]</sup>|[.reduceRight( (result,x) => result+x,"🟩")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright)|"🟩🔺🟡🟦"|
 
