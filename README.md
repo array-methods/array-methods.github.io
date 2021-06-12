@@ -32,14 +32,14 @@ Credits: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03bae
 |<sup>["🟦","🟡","🔺"]</sup>|[.includes( "🟦" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)|**true**|
 |<sup>["🟦","🟡","🔺"]</sup>|[.indexOf( "🟦" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexof)|**0**|
 |<sup>["🟦","🟡","🟦"]</sup>|[.lastIndexOf( "🟦" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastindexof)|**2**|
-|<sup>["🟦","🟡","🔺"]</sup>|[.find( x => x==="🟦" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)|"🟦"|
+|<sup>["🟦","🟡","🔺"]</sup>|[.find( x => x==="🟦" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)|<sup>"🟦"</sup>|
 |<sup>["🟦","🟡","🔺"]</sup>|[.findIndex( x => x==="🟦" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)|**0**|
 
 **Creating a new Array from an existing Array:**
 
 | array before | method (links to MDN) | return value | array after |
 |---|---|---|---|
-|<sup>["🟦","🟡","🔺"]</sup>|[.slice(1, 2)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)|<sup>["🟡","🔺"]</sup>| ["🟦","🟡","🔺"]</sup>|
+|<sup>["🟦","🟡","🔺"]</sup>|[.slice(1, 2)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)|<sup>["🟡","🔺"]</sup>|<sup>["🟦","🟡","🔺"]</sup>|
 |<sup>["🟦","🟡","🔺"]</sup>|[.splice(1, 2)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)|<sup>["🟡","🔺"]</sup>|<sup>["🟦"]</sup>|
 |<sup>["🟦","🟡","🟦"]</sup>|[.filter( x => x==="🟦")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)|<sup>["🟦","🟦"]</sup>|<sup>["🟦","🟡","🟦"]</sup>|
 |<sup>["🟦","🟡"]</sup>|[.map( x => x+x )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)|<sup>["🟦🟦", "🟡🟡"]</sup>|<sup>["🟦","🟡"]</sup>|
@@ -53,10 +53,10 @@ Credits: [Axel Rauschmayer](https://gist.github.com/rauschma/6cdeb4af7586aa03bae
 |---|---|---|
 |<sup>["🟦","🟡","🔺"]</sup>|[.some( x => x==="🟡" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)|true|
 |<sup>["🟦","🟡","🔺"]</sup>|[.every( x => x==="🟡" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)|false|
-|<sup>["🟦","🟡","🔺"]</sup>|[.join( "🟩" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)|"🟦🟩🟡🟩🔺"|
+|<sup>["🟦","🟡","🔺"]</sup>|[.join( "🟩" )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)|<sup>"🟦🟩🟡🟩🔺"</sup>|
 |[ 2, 3, 4 ]|[.reduce( (result,x) => result+x, 10 )](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|**19**<sup> 10+2+3+4</sup>|
-|<sup>["🟦","🟡","🔺"]</sup>|[.reduce( (result,x) => result+x,"🟩")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|"🟩🟦🟡🔺"|
-|<sup>["🟦","🟡","🔺"]</sup>|[.reduceRight( (result,x) => result+x,"🟩")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright)|"🟩🔺🟡🟦"|
+|<sup>["🟦","🟡","🔺"]</sup>|[.reduce( (result,x) => result+x,"🟩")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)|<sup>"🟩🟦🟡🔺"</sup>|
+|<sup>["🟦","🟡","🔺"]</sup>|[.reduceRight( (result,x) => result+x,"🟩")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceright)|<sup>"🟩🔺🟡🟦"</sup>|
 
 **Listing elements:**  
 
